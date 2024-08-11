@@ -19,8 +19,6 @@ const { post } = Astro.props;
 const { Content, headings } = await post.render();
 
 const author = await getEntry("author", post.data.author.id);
-
-console.log(author);
 ---
 
 <BlogLayout title={post.data.title}>
